@@ -1,0 +1,263 @@
+/* Custom Premium Styles for Royal Spirits */
+
+:root {
+    --primary-amber: #d97706; /* amber-600 */
+    --hover-amber: #b45309;   /* amber-700 */
+    --dark-slate: #0f172a;    /* slate-900 */
+    --light-bg: #f8fafc;     /* slate-50 */
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--dark-slate);
+    scroll-behavior: smooth;
+}
+
+/* Navbar Customization */
+.navbar {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--primary-amber) !important;
+}
+
+.nav-link {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #475569 !important; /* slate-600 */
+}
+
+.nav-link:hover {
+    color: var(--primary-amber) !important;
+}
+
+/* Branding Styles */
+.brand-font {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #d97706 !important;
+    letter-spacing: -1px;
+}
+.fw-black { font-weight: 900; }
+.ls-1 { letter-spacing: 0.1em; }
+.ls-2 { letter-spacing: 0.2em; }
+.ls-3 { letter-spacing: 0.3em; }
+.text-amber-600 { color: #d97706; }
+.bg-amber-600 { background-color: #d97706; }
+
+/* Centered Search Bar Styles */
+.search-bar-container {
+    max-width: 500px;
+    width: 100%;
+}
+.search-bar {
+    border-radius: 20px;
+    padding-left: 40px;
+    border: 1px solid #f1f5f9;
+    background-color: #f8fafc;
+}
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+.brand-logo {
+    height: 60px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+/* Flex helpers for true centering */
+.nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-right {
+    justify-content: flex-end;
+}
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .nav-center { display: none; }
+    .nav-left, .nav-right { flex: auto; }
+}
+
+/* Mobile Category Scroll (Secondary Nav) */
+.mobile-categories {
+    background-color: #f1f5f9; /* slate-100 */
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.mobile-categories::-webkit-scrollbar {
+    display: none;
+}
+.mobile-categories a {
+    text-decoration: none;
+    font-size: 0.65rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #64748b;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-subtitle {
+    color: #fbbf24;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+/* Product Cards */
+.product-card {
+    border: 1px solid #f1f5f9;
+    border-radius: 1.5rem;
+    background: white;
+    padding: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+    aspect-ratio: 1/1;
+    background-color: #f8fafc;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .img-container img {
+    transform: scale(1.1);
+}
+
+.add-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-slate);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+    background: var(--primary-amber);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Section Headers */
+.category-header {
+    scroll-margin-top: 100px;
+}
+
+.accent-line {
+    height: 4px;
+    background-color: var(--primary-amber);
+    width: 80px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+/* Order Form */
+.order-card {
+    background-color: #0f172a;
+    border-radius: 2rem;
+    padding: 3rem;
+    border: 1px solid #1e293b;
+}
+
+.form-control {
+    background-color: #1e293b !important;
+    border: none !important;
+    color: white !important;
+    padding: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.form-control::placeholder {
+    color: #475569;
+}
+
+/* Cart Offcanvas */
+.offcanvas-header {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.cart-item {
+    background: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
