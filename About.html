@@ -1,11 +1,59 @@
-<section id="about" class="about-section">
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Precision Auto Care</title>
+    <meta name="description" content="Learn more about Precision Auto Care, our ASE-certified technicians, and our commitment to quality auto repair since 2010.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-red">PRECISION</span>
+                <span class="logo-dark">AUTO CARE</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link"><span class="letter">H</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span></a>
+                <a href="index.html#services" class="nav-link"><span class="letter">S</span><span class="letter">e</span><span class="letter">r</span><span class="letter">v</span><span class="letter">i</span><span class="letter">c</span><span class="letter">e</span><span class="letter">s</span></a>
+                <a href="about.html" class="nav-link active" style="color: var(--primary-red);"><span class="letter">A</span><span class="letter">b</span><span class="letter">o</span><span class="letter">u</span><span class="letter">t</span></a>
+                <a href="index.html#booking" class="btn-book">
+                    <span class="letter">B</span><span class="letter">o</span><span class="letter">o</span><span class="letter">k</span> 
+                    <span class="letter">A</span><span class="letter">p</span><span class="letter">p</span><span class="letter">o</span><span class="letter">i</span><span class="letter">n</span><span class="letter">t</span><span class="letter">m</span><span class="letter">e</span><span class="letter">n</span><span class="letter">t</span>
+                </a>
+            </div>
+            <div class="md-hidden">
+                <button class="nav-link" style="background: none; border: none; cursor: pointer; font-size: 1.5rem;">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero-gradient" style="padding: 8rem 2rem 4rem;">
+        <div class="hero-content">
+            <h1>About Our Shop</h1>
+            <p>Our commitment to excellence drives everything we do.</p>
+        </div>
+    </section>
+
+    <!-- Detailed About Section -->
+    <section class="about-section">
         <div class="about-container">
             <div class="about-image">
                 <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=800" alt="Mechanic working">
             </div>
             <div class="about-text">
                 <h2 class="section-title" style="text-align: left;">Why Choose Precision Auto Care?</h2>
-                <p class="about-p">Founded in 2010, we've built our reputation on honesty and technical excellence. Our team of certified technicians and mechanics uses state-of-the-art diagnostic equipment to ensure your vehicle receives the best care possible.</p>
+                <p class="about-p">Founded in 2010, we've built our reputation on honesty and technical excellence. Our team of ASE-certified technicians uses state-of-the-art diagnostic equipment to ensure your vehicle receives the best care possible.</p>
+                <p class="about-p">We understand that your vehicle is a vital part of your daily life. That's why we treat every car as if it were our own, providing transparent estimates and standing behind our work with a comprehensive warranty.</p>
                 <ul class="about-list">
                     <li><i class="fa-solid fa-check-circle"></i> Certified Master Technicians</li>
                     <li><i class="fa-solid fa-check-circle"></i> 24-Month / 24,000 Mile Warranty</li>
@@ -15,3 +63,60 @@
             </div>
         </div>
     </section>
+
+    <!-- Core Values -->
+    <section style="background: white;">
+        <h2 class="section-title">Our Core Values</h2>
+        <div class="services-grid" style="margin-top: 3rem;">
+            <div class="service-card" style="padding: 2rem; text-align: center;">
+                <i class="fa-solid fa-heart" style="font-size: 2.5rem; color: var(--primary-red); margin-bottom: 1rem;"></i>
+                <h3>Integrity</h3>
+                <p>We believe in honest work and transparent pricing. You'll never pay for a service you don't need.</p>
+            </div>
+            <div class="service-card" style="padding: 2rem; text-align: center;">
+                <i class="fa-solid fa-microchip" style="font-size: 2.5rem; color: var(--primary-red); margin-bottom: 1rem;"></i>
+                <h3>Innovation</h3>
+                <p>We stay ahead of automotive technology with ongoing training and modern diagnostic tools.</p>
+            </div>
+            <div class="service-card" style="padding: 2rem; text-align: center;">
+                <i class="fa-solid fa-users" style="font-size: 2.5rem; color: var(--primary-red); margin-bottom: 1rem;"></i>
+                <h3>Community</h3>
+                <p>As a local business, we're proud to support the neighbors and families of our community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 1.5rem;">
+                    <span class="logo-red">PRECISION</span>
+                    <span class="logo-dark">AUTO CARE</span>
+                </div>
+                <p class="section-subtitle" style="text-align: left; margin: 0;">Quality auto repair and maintenance services you can trust since 2010.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, Anytown, USA</li>
+                    <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@precisionautocare.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Working Hours</h4>
+                <ul class="footer-list working-hours">
+                    <li><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
+                    <li><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                    <li class="closed"><span>Sunday:</span> <span>CLOSED</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #f3f4f6; color: #9ca3af;">
+            &copy; 2026 Precision Auto Care. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
+
