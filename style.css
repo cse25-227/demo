@@ -90,6 +90,33 @@ body {
 
 .btn-book:hover { background-color: var(--primary-red-hover); }
 
+/* New Animations */
+@keyframes btn-shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); text-shadow: 2px 0 red, -2px 0 blue; }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); text-shadow: -2px 0 red, 2px 0 blue; }
+    100% { transform: translate(0); }
+}
+
+.shake-the-btn:hover {
+    animation: btn-shake 0.6s;
+}
+
+.letter {
+    display: inline-block;
+    animation: glitch 1s infinite linear alternate-reverse;
+}
+
 /* Hero Section */
 .hero-gradient {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1920');
