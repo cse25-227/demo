@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | Precision Auto Care</title>
+    <meta name="description" content="Read what our customers have to say about Precision Auto Care. We take pride in our 4.9-star rating and professional service.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-red">PRECISION</span>
+                <span class="logo-dark">AUTO CARE</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link shake-the-btn">Home</a>
+                <a href="index.html#services" class="nav-link shake-the-btn">Services</a>
+                <a href="reviews.html" class="nav-link shake-the-btn" style="color: var(--primary-red);">Reviews</a>
+                <a href="about.html" class="nav-link shake-the-btn">About</a>
+                <a href="index.html#booking" class="btn-book shake-the-btn">Book Appointment</a>
+            </div>
+            <div class="md-hidden">
+                <button class="nav-link">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header style="padding-top: 120px; background: #f9fafb;">
+        <section>
+            <h1 class="section-title">What Our Customers Say</h1>
+            <p class="section-subtitle">Transparency and quality are our top priorities. Check out our latest reviews from verified customers.</p>
+            
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <h2>4.9</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <h2>500+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>15</h2>
+                    <p>Years in Service</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Reviews Grid -->
+    <section>
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">Michael R.</span>
+                    <span class="review-date">April 12, 2026</span>
+                </div>
+                <div class="stars" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Best auto shop in town. They diagnosed a tricky electrical issue that two other shops couldn't find. Honest pricing and quick turnaround. Highly recommend!"</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">Sarah J.</span>
+                    <span class="review-date">March 28, 2026</span>
+                </div>
+                <div class="stars" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"I've been coming here for oil changes for 3 years. They always check my brakes and tires for free and let me know what needs attention without Being pushy."</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">David K.</span>
+                    <span class="review-date">March 15, 2026</span>
+                </div>
+                <div class="stars" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Super professional staff. They sent me a digital report with photos of my car's underside so I could see exactly what they were talking about. 10/10."</p>
+            </div>
+            
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">Elena G.</span>
+                    <span class="review-date">February 20, 2026</span>
+                </div>
+                <div class="stars" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>"Great service overall. A bit of a wait for an appointment but that's expected because they're the best. Worth the wait for the quality of work."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write a Review Section -->
+    <section class="booking-section" style="border-radius: 20px; margin-bottom: 5rem;">
+        <div class="booking-container">
+            <div class="text-center">
+                <h2 class="section-title">Share Your Experience</h2>
+                <p class="section-subtitle" style="color: #9ca3af;">How did we do? Your feedback helps us improve and helps others find reliable care.</p>
+            </div>
+            
+            <form id="reviewForm" class="form-grid">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" required class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <select class="form-control">
+                        <option value="5">5 Stars - Excellent</option>
+                        <option value="4">4 Stars - Very Good</option>
+                        <option value="3">3 Stars - Good</option>
+                        <option value="2">2 Stars - Fair</option>
+                        <option value="1">1 Star - Poor</option>
+                    </select>
+                </div>
+                <div class="form-group col-span-2">
+                    <label>Service Performed</label>
+                    <input type="text" class="form-control" placeholder="e.g., Brake Repair, Oil Change">
+                </div>
+                <div class="form-group col-span-2">
+                    <label>Your Review</label>
+                    <textarea class="form-control" rows="4" placeholder="Tell others about your experience..."></textarea>
+                </div>
+                <div class="col-span-2">
+                    <button type="submit" class="btn-submit">Submit Review</button>
+                </div>
+            </form>
+            <div id="reviewSuccess" class="hidden mt-8 p-6 bg-green-900 border-green-700">
+                <p class="section-title" style="font-size: 1.5rem; margin-bottom: 0;">Review Submitted!</p>
+                <p class="text-green-300">Thank you for sharing your feedback with us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 1.5rem;">
+                    <span class="logo-red">PRECISION</span>
+                    <span class="logo-dark">AUTO CARE</span>
+                </div>
+                <p class="section-subtitle" style="text-align: left; margin: 0;">Quality auto repair and maintenance services you can trust since 2010.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, Anytown, USA</li>
+                    <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@precisionautocare.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Working Hours</h4>
+                <ul class="footer-list working-hours">
+                    <li><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
+                    <li><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                    <li class="closed"><span>Sunday:</span> <span>CLOSED</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #f3f4f6; color: #9ca3af;">
+            &copy; 2026 Precision Auto Care. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('reviewForm');
+        const success = document.getElementById('reviewSuccess');
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
